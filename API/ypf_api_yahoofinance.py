@@ -2,7 +2,7 @@ from yahoo_fin.stock_info import get_data
 import pandas as pd
 
 #Obtenemos datos diarios de YPF desde enero de 2019 a diciembre de 2022
-ypf_daily= get_data("ypf", start_date="01/01/2019", end_date="12/12/2022", index_as_date = False, interval="1d")
+ypf_daily= get_data("YPFD.BA", start_date="01/01/2019", end_date="12/12/2022", index_as_date = False, interval="1d")
 print(ypf_daily.dtypes)
 print("------------- Datos diarios -------------")
 print(ypf_daily.head())
